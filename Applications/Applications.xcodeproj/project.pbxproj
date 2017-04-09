@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E38BCF219EEFCEF008C280D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E78AA98193F47CC00C01E5B /* Images.xcassets */; };
+		7E3EFBB8195040D300F76DBC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3EFBB7195040D300F76DBC /* GLKit.framework */; };
+		7E67880B19EF11C50073EF57 /* libOCL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEFBEF6193FAB5B00AE58C7 /* libOCL.a */; };
+		7E67880C19EF11CA0073EF57 /* libOGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEFBEF8193FAB6100AE58C7 /* libOGL.a */; };
+		7E78AA44193F439D00C01E5B /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E78AA43193F439D00C01E5B /* OpenCL.framework */; };
+		7E78AA81193F47CC00C01E5B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E78AA4A193F46BB00C01E5B /* Cocoa.framework */; };
+		7E78AAB4193F485800C01E5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E78AAB3193F485800C01E5B /* AppDelegate.m */; };
+		7E78AAB6193F498B00C01E5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E78AAB5193F498B00C01E5B /* main.m */; };
+		7E78AABF193F4CF200C01E5B /* FluidOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E78AABE193F4CF200C01E5B /* FluidOpenGLView.m */; };
+		7E78AAC1193F50EB00C01E5B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E78AAC0193F50EB00C01E5B /* OpenGL.framework */; };
+		7E78AAC3193F6C4C00C01E5B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E78AA95193F47CC00C01E5B /* MainMenu.xib */; };
+		7EEFBEF7193FAB5B00AE58C7 /* libOCL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEFBEF6193FAB5B00AE58C7 /* libOCL.a */; };
+		7EEFBEF9193FAB6100AE58C7 /* libOGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEFBEF8193FAB6100AE58C7 /* libOGL.a */; };
+		7EEFBEFA193FAB9C00AE58C7 /* libOCL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEFBEF6193FAB5B00AE58C7 /* libOCL.a */; };
+		7EEFBEFD193FACCD00AE58C7 /* FluidRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EEFBEFC193FACCD00AE58C7 /* FluidRenderer.mm */; };
+		7EEFBF00193FAD7C00AE58C7 /* FluidRendererCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EEFBEFE193FAD7C00AE58C7 /* FluidRendererCPP.cpp */; };
+		7EEFBF01193FAFFE00AE58C7 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E78AA43193F439D00C01E5B /* OpenCL.framework */; };
+		7EEFBF131942522900AE58C7 /* Fluid.cl in Sources */ = {isa = PBXBuildFile; fileRef = 7EEFBF121942522900AE58C7 /* Fluid.cl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E78AA2E193F40D300C01E5B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7E38BCD219EEF91C008C280D /* RayTracer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RayTracer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3EFBB7195040D300F76DBC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7E78AA30193F40D300C01E5B /* RadixSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RadixSort; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E78AA43193F439D00C01E5B /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		7E78AA4A193F46BB00C01E5B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7E78AA80193F47CC00C01E5B /* Fluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E78AA96193F47CC00C01E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7E78AA98193F47CC00C01E5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7E78AAB2193F485800C01E5B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E78AAB3193F485800C01E5B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7E78AAB5193F498B00C01E5B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E78AAB7193F49CB00C01E5B /* Fluid-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fluid-Info.plist"; sourceTree = "<group>"; };
+		7E78AABD193F4CF200C01E5B /* FluidOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluidOpenGLView.h; sourceTree = "<group>"; };
+		7E78AABE193F4CF200C01E5B /* FluidOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluidOpenGLView.m; sourceTree = "<group>"; };
+		7E78AAC0193F50EB00C01E5B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		7EEFBEF6193FAB5B00AE58C7 /* libOCL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCL.a; path = "../../../../Library/Developer/Xcode/DerivedData/OpenCL-bdiebeiaujtqudegpxmswjrbtavb/Build/Products/Debug/libOCL.a"; sourceTree = "<group>"; };
+		7EEFBEF8193FAB6100AE58C7 /* libOGL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOGL.a; path = "../../../../Library/Developer/Xcode/DerivedData/OpenCL-bdiebeiaujtqudegpxmswjrbtavb/Build/Products/Debug/libOGL.a"; sourceTree = "<group>"; };
+		7EEFBEFB193FACCD00AE58C7 /* FluidRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluidRenderer.h; sourceTree = "<group>"; };
+		7EEFBEFC193FACCD00AE58C7 /* FluidRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FluidRenderer.mm; sourceTree = "<group>"; };
+		7EEFBEFE193FAD7C00AE58C7 /* FluidRendererCPP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FluidRendererCPP.cpp; sourceTree = "<group>"; };
+		7EEFBEFF193FAD7C00AE58C7 /* FluidRendererCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluidRendererCPP.h; sourceTree = "<group>"; };
+		7EEFBF121942522900AE58C7 /* Fluid.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = Fluid.cl; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E38BCCF19EEF91C008C280D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E67880C19EF11CA0073EF57 /* libOGL.a in Frameworks */,
+				7E67880B19EF11C50073EF57 /* libOCL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E78AA2D193F40D300C01E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EEFBEFA193FAB9C00AE58C7 /* libOCL.a in Frameworks */,
+				7E78AA44193F439D00C01E5B /* OpenCL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E78AA7D193F47CC00C01E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EEFBEF7193FAB5B00AE58C7 /* libOCL.a in Frameworks */,
+				7EEFBEF9193FAB6100AE58C7 /* libOGL.a in Frameworks */,
+				7E78AA81193F47CC00C01E5B /* Cocoa.framework in Frameworks */,
+				7E3EFBB8195040D300F76DBC /* GLKit.framework in Frameworks */,
+				7EEFBF01193FAFFE00AE58C7 /* OpenCL.framework in Frameworks */,
+				7E78AAC1193F50EB00C01E5B /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E78A90C193E297600C01E5B = {
+			isa = PBXGroup;
+			children = (
+				7E78AA86193F47CC00C01E5B /* Fluid */,
+				7E78A929193E2AD200C01E5B /* Frameworks */,
+				7E78A918193E29DA00C01E5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E78A918193E29DA00C01E5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E78AA30193F40D300C01E5B /* RadixSort */,
+				7E78AA80193F47CC00C01E5B /* Fluid.app */,
+				7E38BCD219EEF91C008C280D /* RayTracer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E78A929193E2AD200C01E5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EEFBEF6193FAB5B00AE58C7 /* libOCL.a */,
+				7EEFBEF8193FAB6100AE58C7 /* libOGL.a */,
+				7E78AA4A193F46BB00C01E5B /* Cocoa.framework */,
+				7E3EFBB7195040D300F76DBC /* GLKit.framework */,
+				7E78AA43193F439D00C01E5B /* OpenCL.framework */,
+				7E78AAC0193F50EB00C01E5B /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E78AA86193F47CC00C01E5B /* Fluid */ = {
+			isa = PBXGroup;
+			children = (
+				7E78AAB2193F485800C01E5B /* AppDelegate.h */,
+				7E78AAB3193F485800C01E5B /* AppDelegate.m */,
+				7EEFBF121942522900AE58C7 /* Fluid.cl */,
+				7E78AABD193F4CF200C01E5B /* FluidOpenGLView.h */,
+				7E78AABE193F4CF200C01E5B /* FluidOpenGLView.m */,
+				7EEFBEFB193FACCD00AE58C7 /* FluidRenderer.h */,
+				7EEFBEFC193FACCD00AE58C7 /* FluidRenderer.mm */,
+				7EEFBEFF193FAD7C00AE58C7 /* FluidRendererCPP.h */,
+				7EEFBEFE193FAD7C00AE58C7 /* FluidRendererCPP.cpp */,
+				7E78AAB5193F498B00C01E5B /* main.m */,
+				7E78AAC4193F6F4000C01E5B /* Supporting Files */,
+			);
+			path = Fluid;
+			sourceTree = "<group>";
+		};
+		7E78AAC4193F6F4000C01E5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E78AAB7193F49CB00C01E5B /* Fluid-Info.plist */,
+				7E78AA98193F47CC00C01E5B /* Images.xcassets */,
+				7E78AA95193F47CC00C01E5B /* MainMenu.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E38BCD119EEF91C008C280D /* RayTracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E38BCF019EEF91C008C280D /* Build configuration list for PBXNativeTarget "RayTracer" */;
+			buildPhases = (
+				7E38BCCE19EEF91C008C280D /* Sources */,
+				7E38BCCF19EEF91C008C280D /* Frameworks */,
+				7E38BCD019EEF91C008C280D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayTracer;
+			productName = RayTracer;
+			productReference = 7E38BCD219EEF91C008C280D /* RayTracer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E78AA2F193F40D300C01E5B /* RadixSort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E78AA36193F40D300C01E5B /* Build configuration list for PBXNativeTarget "RadixSort" */;
+			buildPhases = (
+				7E78AA2C193F40D300C01E5B /* Sources */,
+				7E78AA2D193F40D300C01E5B /* Frameworks */,
+				7E78AA2E193F40D300C01E5B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadixSort;
+			productName = RadixSort;
+			productReference = 7E78AA30193F40D300C01E5B /* RadixSort */;
+			productType = "com.apple.product-type.tool";
+		};
+		7E78AA7F193F47CC00C01E5B /* Fluid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E78AAAC193F47CC00C01E5B /* Build configuration list for PBXNativeTarget "Fluid" */;
+			buildPhases = (
+				7E78AA7C193F47CC00C01E5B /* Sources */,
+				7E78AA7D193F47CC00C01E5B /* Frameworks */,
+				7E78AA7E193F47CC00C01E5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fluid;
+			productName = Fluid;
+			productReference = 7E78AA80193F47CC00C01E5B /* Fluid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E78A90D193E297600C01E5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					7E38BCD119EEF91C008C280D = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 7E78A910193E297600C01E5B /* Build configuration list for PBXProject "Applications" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E78A90C193E297600C01E5B;
+			productRefGroup = 7E78A918193E29DA00C01E5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E78AA2F193F40D300C01E5B /* RadixSort */,
+				7E78AA7F193F47CC00C01E5B /* Fluid */,
+				7E38BCD119EEF91C008C280D /* RayTracer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E38BCD019EEF91C008C280D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E78AA7E193F47CC00C01E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E38BCF219EEFCEF008C280D /* Images.xcassets in Resources */,
+				7E78AAC3193F6C4C00C01E5B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E38BCCE19EEF91C008C280D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E78AA2C193F40D300C01E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E78AA7C193F47CC00C01E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EEFBF00193FAD7C00AE58C7 /* FluidRendererCPP.cpp in Sources */,
+				7E78AABF193F4CF200C01E5B /* FluidOpenGLView.m in Sources */,
+				7EEFBEFD193FACCD00AE58C7 /* FluidRenderer.mm in Sources */,
+				7E78AAB6193F498B00C01E5B /* main.m in Sources */,
+				7E78AAB4193F485800C01E5B /* AppDelegate.m in Sources */,
+				7EEFBF131942522900AE58C7 /* Fluid.cl in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E78AA95193F47CC00C01E5B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E78AA96193F47CC00C01E5B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E38BCEC19EEF91C008C280D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/RayTracer/RayTracer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCL-bdiebeiaujtqudegpxmswjrbtavb/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E38BCED19EEF91C008C280D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/RayTracer/RayTracer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCL-bdiebeiaujtqudegpxmswjrbtavb/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7E78A911193E297600C01E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		7E78A912193E297600C01E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		7E78AA37193F40D300C01E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCL-fhhfmzisgztemxfpdlplwskqbajd/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCL-bdiebeiaujtqudegpxmswjrbtavb/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E78AA38193F40D300C01E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCL-fhhfmzisgztemxfpdlplwskqbajd/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCL-bdiebeiaujtqudegpxmswjrbtavb/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7E78AAAD193F47CC00C01E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_VERSION = 1.0;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Fluid/Fluid-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCL-bdiebeiaujtqudegpxmswjrbtavb/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E78AAAE193F47CC00C01E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_VERSION = 1.0;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Fluid/Fluid-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OpenCL-bdiebeiaujtqudegpxmswjrbtavb/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E38BCF019EEF91C008C280D /* Build configuration list for PBXNativeTarget "RayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E38BCEC19EEF91C008C280D /* Debug */,
+				7E38BCED19EEF91C008C280D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E78A910193E297600C01E5B /* Build configuration list for PBXProject "Applications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E78A911193E297600C01E5B /* Debug */,
+				7E78A912193E297600C01E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E78AA36193F40D300C01E5B /* Build configuration list for PBXNativeTarget "RadixSort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E78AA37193F40D300C01E5B /* Debug */,
+				7E78AA38193F40D300C01E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E78AAAC193F47CC00C01E5B /* Build configuration list for PBXNativeTarget "Fluid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E78AAAD193F47CC00C01E5B /* Debug */,
+				7E78AAAE193F47CC00C01E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E78A90D193E297600C01E5B /* Project object */;
+}
